@@ -22,8 +22,19 @@
 }
 .first-btn, .second-btn{
     color: fuchsia;
+    border-radius: 7px;
 }
 :hover.first-btn, :hover.second-btn{
     color: rgb(238, 255, 0);
     background-color: rgb(17, 134, 236);
+}
+.go-back{
+    text-align: center;
+    padding-top: 10px;
+}
+.go-back .go-back-btn{
+    color: #070303;
+    background-color: #ffb100;
+    border: 2px solid gray;
+    border-radius: 10px;
 }

@@ -1,3 +1,13 @@
 img{
     float: right;
 }
+.go-back{
+    text-align: center;
+    padding-top: 10px;
+}
+.go-back .go-back-btn{
+    color: #070303;
+    background-color: #ffb100;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
