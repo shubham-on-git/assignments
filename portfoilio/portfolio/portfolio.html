@@ -78,7 +78,7 @@
 </div>
 
 <script>
-    fetch('assignments/portfoilio/header/')
+    fetch('/assignments/portfoilio/header/')
     .then(response => response.text())
     .then((res)=>{
         console.log('********res****',res);
@@ -90,7 +90,7 @@
     <div id="footerContainer"></div>
 </section>
 <script>
-    fetch('assignments/portfoilio/footer/commonFooter.html')
+    fetch('/assignments/portfoilio/footer/commonFooter.html')
     .then(response => response.text())
     .then((res)=>{
         console.log('********res****',res);
