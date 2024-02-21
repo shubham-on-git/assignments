@@ -27,18 +27,4 @@ ul {
   a{
     text-decoration: none;
   }
-  #home-bg-img{
-    background-image: url('../Images/home-bg-img.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-	  width: 100%; 
-    height: auto;
-  }
-  .home-content-header{
-    padding: 114px 0px 0px 0px;
-    text-align: center;
-}
-.home-content-header p{
-  text-align: center;
-}
-  
+ 

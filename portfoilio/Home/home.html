@@ -5,13 +5,27 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../footer/style.css">
+    <!-- <script type="module" src="../main.js"></script> -->
 </head>
 <body>
+    <section class="page-headers">
+        <div id="headerContainer"></div>
+    </section>
+    </section>
         <section class="profile" id="home" style="background-color: rgb(241, 234, 234);">
+            <div>
+                <!-- <link rel="import" href=""> -->
+                <!-- <include src="../header/index.html"></include> -->
+            </div>
             <div class="main">
                 <div class="profile-details">
-                    <h3 style="color: rgb(39, 124, 204);">Hello, I'm</h3>
-                    <h1 style="color: rgb(81, 160, 184);">Shubham Pandey</h1>
+                    <h3 style="color: rgb(136 255 0);">Hello, I'm</h3>
+                    <h1 style="color: rgb(39 236 14);">Shubham Pandey</h1>
+                    <h4 class="sub-heading"> 
+                        A Software Engineer with 3 years of Experience.
+                    </h4>
                 </div>
                 <div class="profile-buttons">
                     <button class="first-btn" onclick="hireMe()">
@@ -27,9 +41,7 @@
             </div>
         </section>
     </div>
-    <div class="go-back">
-        <button onclick="history.back()" class="go-back-btn">Go Back To Previous Page</button>
-    </div>
+    
     <script>
         function hireMe(){
             console.log("Hello");
@@ -38,6 +50,26 @@
             console.log("Hii...");
         }
     </script>
+    <script>
+        fetch('/portfoilio/header/')
+        .then(response => response.text())
+        .then((res)=>{
+            console.log('********res****',res);
+            document.getElementById('headerContainer').innerHTML = res;
+        })
+    </script>
    
+   <!-- footer -->
+   <section class="page-footers">
+    <div id="footerContainer"></div>
+</section>
+<script>
+    fetch('/portfoilio/footer/commonfooter.html')
+    .then(response => response.text())
+    .then((res)=>{
+        console.log('********res****',res);
+        document.getElementById('footerContainer').innerHTML = res;
+    })
+</script>
 </body>
 </html>

@@ -1,13 +1,44 @@
-.contact-us{
-    color: rgb(0, 2, 2);
+.contact-form{
+    display: grid;
+    max-width: 500px;
 }
-.go-back{
+.contact-form-main{
+    width: 600px;
+}
+.contact-heading{
     text-align: center;
-    padding-top: 10px;
 }
-.go-back .go-back-btn{
-    color: #070303;
-    background-color: #ffb100;
-    border: 2px solid gray;
-    border-radius: 10px;
+.text{
+    margin-bottom: 4vw;
+    height: 2vw;
+}
+.contact-main{
+    display: flex;
+    margin-left: 5vw;
+}
+.my-contact-details-main{
+    text-align: left;
+    line-height: 2vw;
+
+}
+.my-contact-heading{
+    text-align: left;
+}
+.form-message{
+    margin-bottom: 2vw;
+}
+.form-heading, .my-contact-heading{
+    font-size: x-small   ;
+}
+.form-submit-btn{
+    background-color: #35A99C;
+    border-radius: 5px;
+    border: 2px solid white;
+    line-height: 2vw ;
+
+}
+:hover.form-submit-btn{
+    background-color: #f3f3f3;
+    border: 2px solid rgb(9, 197, 197);
+
 }

@@ -1,13 +1,31 @@
-img{
-    float: right;
+img {
+	float: right;
+	border: 1px dotted black;
+	margin: 0px 0px 15px 20px;
+  }
+.about-heading{
+	margin-left: 5vw;
+	color: white;
 }
-.go-back{
-    text-align: center;
-    padding-top: 10px;
+
+.main{
+	display: flex;
+	margin-left: 5vw;
+	color: white;
+	font-size: large;
+
 }
-.go-back .go-back-btn{
-    color: #070303;
-    background-color: #ffb100;
-    border: 2px solid gray;
-    border-radius: 10px;
+.about-content{
+	width: 100%;
+}
+.about-content-text{
+	width: 300px;
+}
+.about-content-img .img-1{
+	position: relative;
+    top: 25%;
+}
+.about-content-img .img-1 img{
+	width: 300px;
+	height: 200px;
 }

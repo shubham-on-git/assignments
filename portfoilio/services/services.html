@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../footer/style.css">
+    <title>Services</title>
+</head>
+<body>
+    <section class="page-headers">
+        <div id="headerContainer"></div>
+    </section>
+    <div class="service-main">
+        <div style="text-align: center;">
+            <h1>My Services</h1>
+        </div>
+        <div class="row-1">
+            <div class="col-1">
+                <div class="col-1-img-container">
+                <div class="icon-1">
+                    <img src="../Images/serviceIcons/img-1.png">
+                </div>
+                </div>
+                <div>
+                    <h3>Web Design</h3>
+                </div>
+                <p class="p1">Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+            </div>
+            <div class="col-1">
+                <div class="col-1-img-container">
+                    <div class="icon-1">
+                        <img src="../Images/serviceIcons/img-2.png">
+                    </div>
+                    </div>
+                <div>
+                    <h3>Web Development</h3>
+                </div>
+                <p class="p1">Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+            </div>
+            <div class="col-1">
+                <div class="col-1-img-container">
+                    <div class="icon-1">
+                        <img src="../Images/serviceIcons/img-3.png">
+                    </div>
+                    </div>
+                <div>
+                    <h3>SEO</h3>
+                </div>
+                <p class="p1">Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="col-2">
+                <div class="col-1-img-container">
+                    <div class="icon-1">
+                        <img src="../Images/serviceIcons/img-4.png">
+                    </div>
+                    </div>
+                <div>
+                    <h3>Content Writing</h3>
+                </div>
+                <p class="p1">Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+            </div>
+            <div class="col-2">
+                <div class="col-1-img-container">
+                    <div class="icon-1">
+                        <img src="../Images/serviceIcons/img-5.png">
+                    </div>
+                    </div>
+                <div>
+                    <h3>WordPress Dev</h3>
+                </div>
+                <p class="p1">Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+            </div>
+            <div class="col-2">
+                <div class="col-1-img-container">
+                    <div class="icon-1">
+                        <img src="../Images/serviceIcons/img-6.png">
+                    </div>
+                    </div>
+                <div>
+                    <h3>Video Editing</h3>
+                </div>
+                <p class="p1">Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        fetch('/portfoilio/header/')
+        .then(response => response.text())
+        .then((res)=>{
+            console.log('********res****',res);
+            document.getElementById('headerContainer').innerHTML = res;
+        })
+    </script>
+
+      <!-- footer -->
+   <section class="page-footers">
+    <div id="footerContainer"></div>
+</section>
+<script>
+    fetch('/portfoilio/footer/commonfooter.html')
+    .then(response => response.text())
+    .then((res)=>{
+        console.log('********res****',res);
+        document.getElementById('footerContainer').innerHTML = res;
+    })
+</script>
+</body>
+</html>

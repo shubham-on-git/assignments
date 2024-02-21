@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../footer/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+    <title>Image Grid</title>
+</head>
+
+<body>
+    <section class="page-headers">
+        <div id="headerContainer"></div>
+    </section>
+    <div class="portfolio">
+        <div class="main-heading">
+            <h1 style="text-align: center;">Featured Portfolio</h1>
+        </div>
+        <div class="image-grid">
+
+            <div class="img-1"><img style="height: 150px;"
+                    src="../Images/portfolio-images/img-1.avif"
+                    alt="This is my image." />
+                <div class="img-title">
+                    <span class="title">Web Design</span>
+                    <span class="sub-title">Designing</span>
+                </div>
+            </div>
+            <div class="img-1"><img style="height: 150px;"
+                    src="../Images/portfolio-images/img-2.webp"
+                    alt="This is my second image." />
+                <div class="img-title">
+                    <span class="title">Web Development</span>
+                    <span class="sub-title">Development</span>
+                </div>
+            </div>
+            <div class="img-1"><img style="height: 150px;"
+                    src="../Images/portfolio-images/img-3.jpg"
+                    alt="My third image." />
+                <div class="img-title">
+                    <span class="title">SEO</span>
+                    <span class="sub-title">Optimization</span>
+                </div>
+            </div>
+        </div>
+        <div class="image-grid-1">
+
+            <div class="img-1"><img style="height: 150px;"
+                    src="../Images/portfolio-images/img-4.jpg"
+                    alt="This is my image." />
+                <div class="img-title">
+                    <span class="title">Content Writing</span>
+                    <span class="sub-title">Writing</span>
+                </div>
+            </div>
+            <div class="img-1"><img style="height: 150px;"
+                    src="../Images/portfolio-images/img-5.jpg"
+                    alt="This is my second image." />
+                <div class="img-title">
+                    <span class="title">Word Press Dev</span>
+                    <span class="sub-title">Content Management System</span>
+                </div>
+            </div>
+            <div class="img-1"><img style="height: 150px;"
+                    src="../Images/portfolio-images/img-6.png"
+                    alt="My third image." />
+                <div class="img-title">
+                    <span class="title">Video</span>
+                    <span class="sub-title">Editing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    fetch('/portfoilio/header/')
+    .then(response => response.text())
+    .then((res)=>{
+        console.log('********res****',res);
+        document.getElementById('headerContainer').innerHTML = res;
+    })
+</script>
+  <!-- footer -->
+  <section class="page-footers">
+    <div id="footerContainer"></div>
+</section>
+<script>
+    fetch('/portfoilio/footer/commonfooter.html')
+    .then(response => response.text())
+    .then((res)=>{
+        console.log('********res****',res);
+        document.getElementById('footerContainer').innerHTML = res;
+    })
+</script>
+</body>
+
+</html>
