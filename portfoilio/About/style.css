@@ -1,4 +1,4 @@
-img {
+.about-img {
 	float: right;
 	border: 1px dotted black;
 	margin: 0px 0px 15px 20px;
@@ -7,7 +7,7 @@ img {
 	margin-left: 5vw;
 	color: white;
 }
-
+ 
 .main{
 	display: flex;
 	margin-left: 5vw;
@@ -43,7 +43,7 @@ img {
 		width: 200px;
 		height: 200px;
 	}
-} */
+} */ 
   @media screen and ( 317px <= width <= 447px ) {
 	.about-content-img .img-1 img{
 		width: 300px;
