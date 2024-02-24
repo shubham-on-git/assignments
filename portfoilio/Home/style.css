@@ -7,10 +7,12 @@
 	height: 590px; 
 }
 .main{
-    width: 400px;
+    /* width: 400px; */
     text-align: center;
     padding: 100px 0px 0px 0px;
-    line-height: 2vw;
+    /* line-height: 2vw; */
+    float: left;
+    margin-left: 5vw;
 }
 .sub-heading{
     color: rgb(252 254 255);
@@ -36,3 +38,4 @@
     color: rgb(238, 255, 0);
     background-color: rgb(17, 134, 236);
 }
+

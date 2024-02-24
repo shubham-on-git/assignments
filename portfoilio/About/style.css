@@ -17,6 +17,7 @@ img {
 }
 .about-content{
 	width: 100%;
+	display: flex;
 }
 .about-content-text{
 	width: 300px;
@@ -29,3 +30,53 @@ img {
 	width: 300px;
 	height: 200px;
 }
+.about-content-img{
+	width: 100%;
+}
+.img-1{
+	margin-right: 5vw;
+}
+/* Responsive Layout Css */
+
+/* @media screen and (max-width: 447px) {
+	.about-content-img .img-1 img{
+		width: 200px;
+		height: 200px;
+	}
+} */
+  @media screen and ( 317px <= width <= 447px ) {
+	.about-content-img .img-1 img{
+		width: 300px;
+		height: 200px;
+		float: left;
+		margin: 0;
+	}
+	.about-content{
+		display: block;
+	}
+	.about-content-text{
+		width: 200px;
+	}
+  }
+  @media screen and ( 50px <= width <= 316px ){
+	.about-content-img .img-1 img{
+		width: 100px;
+		height: 70px;
+		float: left;
+		margin: 0;
+	}
+	.about-content{
+		display: block;
+	}
+	.about-content-text{
+		width: 100px;
+	}
+}
+  /* @media screen and (min-width: 475px) {
+	.about-content-text{
+		width: 700px;
+	}
+	.about-content-text p{
+		width: 300px;
+	}
+  } */

@@ -42,3 +42,14 @@
     border: 2px solid rgb(9, 197, 197);
 
 }
+
+/* Responsive */
+@media screen and ( 50px <= width <= 490px ){
+    .contact-main{
+        display: block;
+        margin-left: 5vw;
+    }
+    .contact-form-main{
+        width: 300px;
+    }
+}

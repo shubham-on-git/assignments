@@ -45,3 +45,10 @@
 .col-1-img-container{
 text-align: -webkit-center;
 }
+
+/* Responsive */
+@media screen and ( 50px <= width <= 490px ){
+    .row-1, .row-2{
+        display: block;
+    }
+}

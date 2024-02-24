@@ -39,18 +39,21 @@
 						programs used to “manage” or facilitate the construction of sites that would otherwise have to
 						be
 						done3, and Adobe Experience Manager, among others.
+						
 					</p>
 				</div>
-			</div>
-			<div class="about-content-img">
-				<div class="img-1">
-					<img src="../Images/about/about-img-1.jpg" width="100" height="140">
+				<div class="about-content-img">
+					<div class="img-1">
+						<img src="../Images/about/about-img-1.jpg" width="100" height="140">
+					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 	<script>
 		fetch('/assignments/portfoilio/header/')
+		//    fetch('/portfoilio/header/')
 			.then(response => response.text())
 			.then((res) => {
 				console.log('********res****', res);
@@ -64,6 +67,7 @@
 	</section>
 	<script>
 		fetch('/assignments/portfoilio/footer/commonFooter.html')
+		//    fetch('/portfoilio/footer/commonFooter.html')
 			.then(response => response.text())
 			.then((res) => {
 				console.log('********res****', res);

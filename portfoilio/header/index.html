@@ -1,24 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <!-- <link type="script" href="./index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
-<body style="background-color: rgb(248, 248, 248);">
-    
-    <div class="main-header">
-        <header>
-            <nav>
-            <img src="../Images/home-icon.png" style="width: 25px; height: 25px; float: left; padding: 10px;">
-            <ul class="topnav">
-                <li><a href="../Home/home.html">Home</a></li>
-                <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="../About/about.html">About</a></li>
-                <li><a href="../services/services.html">Services</a></li>
-                <li><a href="../Contact/contact.html">Contact Me</a></li>
-            </ul>
-            <nav>
-        </header>
-    </div>
+<style>/* .home-icon{
+    background-image: url('../Images/home-icon.png');
+  }
+  .main-header{
+      background-color: rgb(14, 235, 161);
+      height: 50px;
+      position: sticky;
+      top: 0;
+  }
+  .top-bar a{
+      color: white;  
+  }
+  .top-bar{
+      text-align: end;
+      padding: 15px 5px 0px 0px;
+  }
+  ul {
+      list-style: none;
+      padding: 0; 
+      float: right;
+    }
+  
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      }
+    a{
+      text-decoration: none;
+    }
+    .icon {
+      display: none;
+    }
    
+   */
+  
+  
+   /* New */
+  
+   /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #53c9ab;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  /* .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  .icon{
+    background-image: url('../Images/home-menu-bar/homeMenuBar.svg');
+    margin:1vw;
+  }
+    /* Responsive */
+  
+   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) 
+  {
+    /* .topnav a:not(:first-child) 
+    {
+      display: none;
+    } */
+    .topnav a{
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }</style>
+<body style="background-color: rgb(248, 248, 248);">
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="../Home/home.html">Home</a>
+        <a href="../portfolio/portfolio.html">Portfolio</a>
+        <a href="../About/about.html">About</a>
+        <a href="../services/services.html">Services</a>
+        <a href="../Contact/contact.html">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick='{
+            let x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }'>
+        </a>
+    </div>
 </body>
+
 </html>

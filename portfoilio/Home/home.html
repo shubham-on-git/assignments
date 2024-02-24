@@ -7,10 +7,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="../header/style.css">
     <link rel="stylesheet" href="../footer/style.css">
-    <!-- <script type="module" src="../main.js"></script> -->
+    
+    <link rel="javascript" href="../header/index.js">
+    <!-- <script type="script" src="../header/index.js"></script> -->
 </head>
 <body>
     <section class="page-headers">
+        <!-- <object type="text/html" data="../header/index.html" width="100%" height="100%s"></object> -->
         <div id="headerContainer"></div>
     </section>
     </section>
@@ -52,11 +55,17 @@
     </script>
     <script>
         fetch('/assignments/portfoilio/header/')
+        // fetch('/portfoilio/header/')
         .then(response => response.text())
         .then((res)=>{
             console.log('********res****',res);
             document.getElementById('headerContainer').innerHTML = res;
-        })
+            
+            
+    // const parser = new DOMParser();
+    // const html = parser.parseFromString(`<div>Hello</div>`, 'text/html');
+    //         document.getElementById('headerContainer').append(html) //= html
+        });
     </script>
    
    <!-- footer -->
@@ -65,6 +74,7 @@
 </section>
 <script>
     fetch('/assignments/portfoilio/footer/commonFooter.html')
+    // fetch('/portfoilio/footer/commonFooter.html')
     .then(response => response.text())
     .then((res)=>{
         console.log('********res****',res);

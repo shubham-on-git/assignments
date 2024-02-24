@@ -56,3 +56,29 @@ img{
     border-bottom-left-radius:20px ;
     border-bottom-right-radius:20px ;
 }
+
+/* Responsive */
+@media screen and ( 544px <= width <= 852px ){
+
+    .img-1 img{
+        height: 150px;
+        width: 150px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        
+        }
+}
+@media screen and ( 100px <= width <= 543px ){
+    .img-1,.img-1 img{
+        width: 120px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;  
+        }
+}
+@media screen and ( 100px <= width <= 484px ){
+    .img-1,.img-1 img{
+        width: 100px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;  
+        }
+}
