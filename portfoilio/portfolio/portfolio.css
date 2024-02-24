@@ -57,6 +57,7 @@ img{
     border-bottom-right-radius:20px ;
 }
 
+
 /* Responsive */
 @media screen and ( 544px <= width <= 852px ){
 
@@ -65,7 +66,7 @@ img{
         width: 150px;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-        
+        padding: 2px;
         }
 }
 @media screen and ( 100px <= width <= 543px ){
@@ -81,4 +82,14 @@ img{
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;  
         }
+    .img-1{
+        height: 206px;
+        max-height: 206px;
+    }
+    .special{
+      line-height: 3vw;
+    }
+    .special .special-title{
+       font-size: small;
+    }
 }
